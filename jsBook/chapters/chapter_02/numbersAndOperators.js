@@ -7,12 +7,10 @@ var f = a / b; // division
 console.log(c, d, e, f);
 
 var vicky;
-underfined
+// underfined
 
 var age = 12;
-underfined
-
-var numberOfSiblings = 1 + 2;
+// underfined
 
 var cSharpBetter = true;
 var javaScriptIsHard = false;
@@ -21,3 +19,9 @@ var yaroslav;
 var vicky = !yaroslav;
 
 var box = null;
+
+var a = 10;
+console.log(a + a);
+
+console.log(a += 5,
+            a -= 1);
