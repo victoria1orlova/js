@@ -40,3 +40,11 @@ console.log(myNickName[4],
             myNickName[5]);
 var myName = "Vicky";
 console.log(myName.slice(2, 5));
+
+var height = 154;
+var secondHeight = 156;
+console.log(secondHeight > height,
+            height > secondHeight,   // false
+            height >= secondHeight,  // true
+            height < secondHeight,   // false
+            height <= secondHeight); // true
