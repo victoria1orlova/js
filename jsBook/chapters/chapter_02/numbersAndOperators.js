@@ -48,3 +48,15 @@ console.log(secondHeight > height,
             height >= secondHeight,  // true
             height < secondHeight,   // false
             height <= secondHeight); // true
+
+var str = "Hi there, what's up?";
+var str2 = "hI tHeRe, WhaTs Up?";
+console.log(str.toLowerCase(),
+            str2.toLowerCase());
+
+var sillyString = "HeLlO THErE, HoW ARE yOu?";
+var lowerString = sillyString.toLowerCase();
+var firstCharacter = lowerString[0];
+var firstCharacterUpper = firstCharacter.toUpperCase();
+var restOfString = lowerString.slice(1);
+console.log(firstCharacterUpper + restOfString);
