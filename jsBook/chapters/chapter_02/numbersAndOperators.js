@@ -60,3 +60,20 @@ var firstCharacter = lowerString[0];
 var firstCharacterUpper = firstCharacter.toUpperCase();
 var restOfString = lowerString.slice(1);
 console.log(firstCharacterUpper + restOfString);
+
+var cSharpBetter = true;
+
+var lightsOn = true;
+var switchOff = false;
+var switchOn = true;
+console.log(lightsOn && switchOff); // false
+console.log(lightsOn && switchOn); // true
+
+var haveBadMark = false;
+var haveGoodMark = true;
+console.log(haveBadMark || haveGoodMark); // true
+
+var isWeekday = true;
+var goingToFathersHome = !isWeekday;
+console.log(goingToFathersHome,   // false
+            !goingToFathersHome); // true
