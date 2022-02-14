@@ -48,3 +48,6 @@ console.log(secondHeight > height,
             height >= secondHeight,  // true
             height < secondHeight,   // false
             height <= secondHeight); // true
+
+var country = 'Ukraine';
+console.log("Hi, I'm " + {myName} + "and I'm from " + {country});
