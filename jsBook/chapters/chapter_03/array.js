@@ -32,7 +32,24 @@ dinosaurus[7] = "Diplodocus";
 dinosaurus[8] = "Compsognathus";
 console.log(dinosaurus[6]);
 
-var lessons = [];
-var aditionalTasks = [];
-var myWork = [[lessons], [aditionalTasks]];
+var animals = [];
+animals.push("Cat");
+animals.push("Dog");
+animals.push("Lama");
+animals;
+console.log(animals.length);
+animals[0];
+animals.unshift("Monkey");
+console.log(animals);
+animals.unshift("Polar bear");
+console.log(animals);
+animals[2];
 
+animals;
+var lastAnimal = animals.pop();
+console.log(lastAnimal);
+console.log(animals);
+console.log(animals.pop());
+console.log(animals);
+animals.unshift(lastAnimal);
+console.log(animals);
