@@ -1,0 +1,68 @@
+var dinosaur1 = "T-Rex";
+var dinosaur2 = "Velocirator";
+var dinosaur3 = "Stegosaurus";
+var dinosaur4 = "Tricerators";
+var dinosaur5 = "Branchiosaurus";
+var dinosaur6 = "Pteranodon";
+var dinosaur7 = "Apatosaurus";
+var dinosaur8 = "Diplodocus";
+var dinosaur9 = "Compsognathus";
+[]; // that's array
+
+var dinosaur = ["T-Rex",
+                "Velocirator",
+                "Stegosaurus",
+                "Tricerators",
+                "Branchiosaurus",
+                "Pteranodon",
+                "Apatosaurus",
+                "Diplodocus",
+                "Compsognathus"
+]; // that's array too
+
+var dinosaurus = [];
+dinosaurus[0] = "T-Rex";
+dinosaurus[2] = "Velocirator";
+dinosaurus[2] = "Stegosaurus";
+dinosaurus[3] = "Tricerators";
+dinosaurus[4] = "Branchiosaurus";
+dinosaurus[5] = "Pteranodon";
+dinosaurus[6] = "Apatosaurus";
+dinosaurus[7] = "Diplodocus";
+dinosaurus[8] = "Compsognathus";
+console.log(dinosaurus[6]);
+
+var animals = [];
+animals.push("Cat");
+animals.push("Dog");
+animals.push("Lama");
+animals;
+console.log(animals.length);
+animals[0];
+animals.unshift("Monkey");
+console.log(animals);
+animals.unshift("Polar bear");
+console.log(animals);
+animals[2];
+
+animals;
+var lastAnimal = animals.pop();
+console.log(lastAnimal);
+console.log(animals);
+console.log(animals.pop());
+console.log(animals);
+animals.unshift(lastAnimal);
+console.log(animals);
+
+var animalsWithFur = ["Lama", "Bear", "Lion"];
+var animalsWithoutFur = ["Snike", "Fish"];
+var featheredAnimals = ["Parrot", "Eagle"];
+var allAnimals = furryAnimals.concat(animalsWithFur,
+                                    animalsWithoutFur);
+console.log(allAnimals);
+
+var colors = ["white", "green", "black"];
+console.log(colors.indexOf("black"));
+console.log(colors.indexOf("green"));
+console.log(colors.indexOf("viollet"));
+console.log(colors.indexOf("Lama"));
