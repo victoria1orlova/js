@@ -65,4 +65,6 @@ var colors = ["white", "green", "black"];
 console.log(colors.indexOf("black"));
 console.log(colors.indexOf("green"));
 console.log(colors.indexOf("viollet"));
-console.log(colors.indexOf("Lama"));
+
+var insects = ["Bee", "Ant", "Bee", "Bee", "Ant"];
+console.log(insects.indexOf("Bee"));
