@@ -44,7 +44,6 @@ console.log(animals);
 animals.unshift("Polar bear");
 console.log(animals);
 animals[2];
-
 animals;
 var lastAnimal = animals.pop();
 console.log(lastAnimal);
@@ -54,17 +53,15 @@ console.log(animals);
 animals.unshift(lastAnimal);
 console.log(animals);
 
-var animalsWithFur = ["Lama", "Bear", "Lion"];
-var animalsWithoutFur = ["Snike", "Fish"];
-var featheredAnimals = ["Parrot", "Eagle"];
-var allAnimals = furryAnimals.concat(animalsWithFur,
-                                    animalsWithoutFur);
-console.log(allAnimals);
+var lazyAnimals = ["Sylva", "Lyntik"];
+console.log(lazyAnimals.join());
+console.log(lazyAnimals.join(" - "));
+console.log(lazyAnimals.join("/"));
+console.log(lazyAnimals.join(" and "));
 
-var colors = ["white", "green", "black"];
-console.log(colors.indexOf("black"));
-console.log(colors.indexOf("green"));
-console.log(colors.indexOf("viollet"));
+var names = ["Vicky", "Mike", "Yaroslav", "Vanya"];
+console.log(names.join(" "));
+console.log(names[0] + " " + names[1] + " " + names[2] + " " + names[3] + ":)" ); // If we didn't have "join"
 
-var insects = ["Bee", "Ant", "Bee", "Bee", "Ant"];
-console.log(insects.indexOf("Bee"));
+var ages = [12, 41, 9, 19]
+console.log(ages.join(" "));
