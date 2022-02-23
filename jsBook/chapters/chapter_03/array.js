@@ -65,3 +65,21 @@ console.log(names[0] + " " + names[1] + " " + names[2] + " " + names[3] + ":)" )
 
 var ages = [12, 41, 9, 19]
 console.log(ages.join(" "));
+
+var landMarks = [];
+landMarks.push("My house;");
+landMarks.push("School,");
+landMarks.push("Shop,");
+landMarks.push("Cinema,");
+landMarks.push("My friend's house,");
+landMarks.push("Cafe,");
+landMarks.push("Park,");
+landMarks.push("Gym,");
+console.log(landMarks.pop(),
+            landMarks.pop(),
+            landMarks.pop(),
+            landMarks.pop(),
+            landMarks.pop(),
+            landMarks.pop(),
+            landMarks.pop(),
+            landMarks.pop());
