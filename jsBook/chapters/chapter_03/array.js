@@ -83,3 +83,33 @@ console.log(landMarks.pop(),
             landMarks.pop(),
             landMarks.pop(),
             landMarks.pop());
+
+for(var i = 0; i < 3; i++)
+{
+    console.log(Math.random());
+}
+
+for(var i = 0; i < 3; i++)
+{
+    console.log(Math.random() * 10);
+}
+
+console.log(Math.floor(3.567392));
+console.log(Math.floor(9.9999));
+console.log(Math.floor(0.79436998239729));
+
+console.log(Math.floor(Math.random() * 3));
+
+var randomPlace = ["Kyiv", "Odessa", "Harkiv", "Lviv"];
+var randomIndex = Math.floor(Math.random() * 4);
+console.log(randomPlace[randomIndex]);
+
+var randomBodyParts = ["eye", "nose", "skull"];
+var randomAdjectives = ["smelly", "dull", "stupid"];
+var randomWords = ["fly", "otter", "cudgel", "monkey", "rat"];
+var randomBodyPart = randomBodyParts[Math.floor(Math.random() * 3)];
+var randomAdjective = randomAdjectives[Math.floor(Math.random() * 3)];
+var randomWord = randomWords[Math.floor(Math.random() * 5)];
+var randomInsult = "You have " + randomBodyPart + " like " + 
+randomAdjective + " " + randomWord + "!!!";
+console.log(randomInsult);
