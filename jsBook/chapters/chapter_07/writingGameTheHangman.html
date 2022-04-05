@@ -25,9 +25,45 @@
             console.log("Well what can you do, but that's okay!");
         }
 
-        alert("JavaScript is ez")
-        // next is wriring game
-    </script>
+        alert("JavaScript is ez");
+        
+        var words = ["program", "toque", "beautiful", "pancake"];
+        var word = words[Math.floor(Math.random() * words.length)];
+        var answerArray = [];
+        for (var i = 0; i < word.length; i++)
+        {
+            answerArray[i] = "_";
+        }
+
+        var remainingLetters = word.length;
+        while (remainingLetters > 0)
+        {
+            
+            alert(answerArray.join(" "));
+            var guess = prompt("Guess the letter or press Cancel to exit from the game.");
+            if (guess === null)
+            {
+                break;
+            }
+            else if (guess.length !== 1)
+            {
+                alert("Please, enter only one letter.");
+            }
+            else
+            {
+                for (var j = 0; j < word.length; j++)
+                {
+                    if (word[j] === guess)
+                    {
+                        answerArray[j] = guess;
+                        remainingLetters--;
+                    }
+                }
+            }
+        }
+        alert(answerArray.join(" "));
+        alert(`Great! The word was given: ${word}`);
+</script>
 </body>
 
 </html>
