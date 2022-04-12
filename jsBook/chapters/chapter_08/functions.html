@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="functions.js"></script>
+    <title></title>
+</head>
+
+<body
+    style="background-image: url('https://eskipaper.com/images/hd-space-wallpapers-2.jpg');background-size: 100%;color: white;">
+
+    <h1 style="font-family:Courier New; text-align:center">Chapter 8. Functions</h1>
+    <script>
+        firstFunction = function name() {
+            console.log("Hello");
+        }
+        firstFunction(); // how to call function
+
+        var sayHiTo = function (name) {
+            console.log(`Hello, ${name}!`);
+        }
+
+        var drawCats = function name (howManyCats) {
+            for (let i = 0; i < howManyCats; i++) {
+                console.log(i + "=^w^=");              
+            }
+        };
+
+        var printMultpleTimes = function (howManyTimes, whatToDraw) {
+            for (let i = 0; i < howManyTimes; i++) {
+                console.log(i + " " + whatToDraw);
+            }
+        };
+        console.log(printMultpleTimes(5, "=^.^="));
+
+        var double = function (num) {
+            return num * 2;
+        }
+
+        var pickRanWord = function (words) {
+            return words[Math.floor(Math.random() * words.length)];
+        };
+        var randomWords = ["planet", "worm", "flower", "computer"];
+        console.log(pickRanWord(randomWords));
+        console.log(pickRanWord(["Charlie", "Raj", "Nicole", "Kate", "Sendy"]));
+
+        var randomBodyParts = ["eye", "nose", "scull"];
+        var randomAdjective = ["dull", "smelly", "stupid"];
+        var randomWords = ["fly", "otter", "club", "monkey", "rat"];
+        var randomBodyPart = randomBodyParts[Math.floor(Math.random() * 3)];
+        var randomAdjective = randomAdjective[Math.floor(Math.random() * 3)];
+        var randomWord = randomWords[Math.floor(Math.random() * 5)];
+        var randomInsult = "You have " + randomBodyPart + " like " +
+        randomAdjective + " " + randomWord + "!!!";
+        console.log(randomInsult);
+
+        var generateRandomInsult = function () {
+            var randomBodyParts = ["eye", "nose", "scull"];
+            var randomAdjectives = ["dull", "smelly", "stupid"];
+            var randomWords = ["fly", "otter", "club", "monkey", "rat"];
+
+            var randomStr = "You have " + pickRanWord(randomBodyParts) +
+            " like " + pickRanWord(randomAdjectives) +
+            " " + pickRanWord(randomWords) + "!!!";
+            return randomStr;
+        };
+        console.log(generateRandomInsult());
+</script>
+</body>
+
+</html>
