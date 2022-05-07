@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="domAndJqery.js"></script>
+    <title></title>
+</head>
+
+<body
+    style="background-image: url('https://external-preview.redd.it/kaAv3gr6lGgXuRHMwMXFIelkWu4F3XFqXegwQFJN3Zo.jpg?auto=webp&s=00bd50428ffe5d2701aa7c0f97ebc657535427e7');background-size: 100%;color: white;">
+   <h1 id="main-heading" style="font-family:Courier New; text-align:center">Hello everyone!</h1>
+   <h2 style="font-family:Courier New; text-align:center">Hello Mike!</h2>
+
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+    <script>
+        var headingElement = document.getElementById("main-heading");
+        console.log(headingElement.innerHTML);
+        var newHeadingText = prompt("Enter new heading:");
+        headingElement.innerHTML = newHeadingText;
+        
+        var newHeadingText = prompt("Enter new heading:");
+        $("#main-heading").text(newHeadingText);
+        $("body").append("<p>It's a new paragraph</p>");
+        for (let i = 0; i < 1; i++) {
+            var hobby = prompt("Tell me one of your hobbies");
+            $("body").append("<p>" + hobby + "</p>");
+        }
+        
+        $("h2").fadeOut(3000);
+        $("h2").text("Boo").fadeOut(3000);
+        $("h2").fadeOut(3000).fadeIn(2000);
+        
+        $("h2").hide();
+    </script>
+
+</body>
+
+</html>
