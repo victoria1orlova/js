@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="interactiveProgramming.js"></script>
+    <title></title>
+</head>
+
+<body style="background-image: url('https://image.winudf.com/v2/image1/Y29tLnF1aWVsYW54MC5TcGFjZVdhbGxwYXBlcnM0S19zY3JlZW5fOF8xNTUxNjQzNTE1XzA2Mg/screen-8.jpg?fakeurl=1&type=.jpg');background-size: 100%;color: white;">
+    <h1 style="font-family:Courier New; text-align:center">Chapter 10</h1>
+    <script>
+        var timeUp = function () {
+           alert("Time's up!");
+        };
+
+        console.log(setTimeout(timeUp, 3000));
+
+        var doHWAlarm = function () {
+            alarm("Hay! Time to do HW!");
+        };
+
+        var timeoutId = setTimeout(doHWAlarm, 30000);
+        clearTimeout(timeoutId)
+
+        var counter = 1;
+
+        var printSMS = function () {
+            console.log(`U look at the console already ${counter} sec`);
+            counter++;
+        };
+
+        var intervalId = setInterval(printSMS, 1000);
+        clearInterval(intervalId);
+    </script>
+
+    <script src="http://code.jquery.com/jquery-2.1.0.js">
+    </script>
+
+    <script>
+        var leftOffset = 0;
+        
+        var moveHeading = function () {
+           $("#heading").offset({ left: leftOffset });
+
+           leftOffset++;
+
+           if (leftOffset > 200) {
+                leftOffset = 0;
+           }
+        };
+
+        setInterval(moveHeading, 30);
+
+        var clickHandler = function (event) {
+            console.log(`Click! ${event.pageX} ${event.pageY}`);
+        };
+
+        $("h1").click(clickHandler);
+
+        $("html").mousemove(function (event) {
+            $("#heading").offset({
+                left: event.pageX,
+                top: event.Y
+            });
+        });
+    </script>
+</body>
+
+</html>
