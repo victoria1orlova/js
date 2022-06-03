@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="objectOrientedProgramming.js"></script>
+    <title>Main site</title>
+</head>
+
+<body
+    style="background-image: url('https://i.pinimg.com/originals/3f/73/d5/3f73d57e3252bb60f1b622e7f6595a6e.jpg');background-size: 100%;color: white;">
+    <h1 style="font-family:Courier New; text-align:center">Chapter 12</h1>
+
+    <script>
+        var cat = {
+            name: "Silva",
+            legs: 4,
+            isAwesome: true
+        };
+        console.log(cat.name);
+        cat.age = 3;
+        console.log(cat);
+
+        cat.meow = function () {
+            console.log("Meow-meow! My name is " + this.name);
+        };
+        console.log(cat.meow);
+
+        var speak = function () {
+            console.log(this.sound + "! My name is " + this.nam);
+        };
+
+        var littleCat = {
+            sound: "Myau",
+            name: "Luntik",
+            speak: speak
+        };
+        console.log(cat.speak());
+    </script>
+</body>
+
+</html>
