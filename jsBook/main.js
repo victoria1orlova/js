@@ -6,4 +6,4 @@ var drawKitty = function (howManyTimes)
         console.log(i + "=*w*=")
     }
 };
-drawKitty(12);
+drawKitty(12);  
