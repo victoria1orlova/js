@@ -35,7 +35,6 @@ var onLoaded = function () {
             if (ar[i] > max) {
                 max = ar[i];
             }
-
         }
 
         return max;
